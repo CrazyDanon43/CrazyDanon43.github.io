@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоHub | Профиль</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-primary">Авто</span><span>HUB</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="#contact" class="nav-link">Запись</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="profile.html" class="profile-btn">
+                        <i data-feather="user" class="w-5 h-5"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <img src="http://static.photos/people/200x200/1" class="profile-avatar" alt="Аватар">
+                        <div>
+                            <h1 class="profile-name">Иван Иванов</h1>
+                            <p class="profile-meta">Клиент с 2020 года</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div>
+                        <h2 class="profile-section-title">Мои автомобили</h2>
+                        <div class="cars-list">
+                            <div class="car-item">
+                                <i data-feather="car" class="car-icon"></i>
+                                <div>
+                                    <h3 class="car-name">Toyota Camry</h3>
+                                    <p class="car-details">2020, 2.5 л</p>
+                                </div>
+                            </div>
+                            <div class="car-item">
+                                <i data-feather="car" class="car-icon"></i>
+                                <div>
+                                    <h3 class="car-name">LADA Vesta</h3>
+                                    <p class="car-details">2018, 1.6 л</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="profile-section-title">История посещений</h2>
+                        <div class="space-y-4">
+                            <div class="history-item">
+                                <h3 class="history-title">Замена масла</h3>
+                                <p class="history-date">15.05.2023</p>
+                                <p class="history-price">Стоимость: 4 500 ₽</p>
+                            </div>
+                            <div class="history-item">
+                                <h3 class="history-title">Диагностика подвески</h3>
+                                <p class="history-date">10.03.2023</p>
+                                <p class="history-price">Стоимость: 3 200 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-appointment">
+                        <h2 class="profile-section-title">Предстоящие записи</h2>
+                        <div class="appointment-header">
+                            <i data-feather="calendar" class="appointment-icon"></i>
+                            <div>
+                                <h3 class="appointment-title">Техническое обслуживание</h3>
+                                <p class="appointment-date">25.06.2023 в 10:00</p>
+                            </div>
+                        </div>
+                        <button class="cancel-btn">Отменить запись</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <a href="https://yandex.ru/maps" target="_blank" class="map-btn">
+                        <i data-feather="map-pin" class="map-icon"></i>
+                        Найти нас на карте
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">График работы</h3>
+                    <div class="footer-schedule">
+                        <p>Пн-Пт: 9:00 - 20:00</p>
+                        <p>Сб: 10:00 - 18:00</p>
+                        <p>Вс: выходной</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Контактный телефон</h3>
+                    <a href="tel:+78001234567" class="phone-link">
+                        <i data-feather="phone" class="phone-icon"></i>
+                        8 (800) 123-45-67
+                    </a>
+                    <p class="phone-note">Звонок бесплатный</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

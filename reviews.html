@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоHub | Отзывы</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-primary">Авто</span><span>HUB</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="services.html" class="nav-link">Услуги</a>
+                    <a href="#contact" class="nav-link">Запись</a>
+                    <a href="#about" class="nav-link">О нас</a>
+                    <a href="reviews.html" class="nav-link">Отзывы</a>
+                    <a href="profile.html" class="profile-btn">
+                        <i data-feather="user" class="w-5 h-5"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Отзывы наших клиентов</h1>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="http://static.photos/people/200x200/1" alt="Иван Петров" class="testimonial-avatar">
+                        <div>
+                            <h4 class="testimonial-name">Иван Петров</h4>
+                            <div class="testimonial-stars">
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Отличный сервис! Починили коробку передач за один день, хотя в другом месте сказали, что нужно менять полностью. Спасибо за честность и профессионализм!"</p>
+                    <p class="testimonial-date">15 мая 2023</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="http://static.photos/people/200x200/2" alt="Елена Смирнова" class="testimonial-avatar">
+                        <div>
+                            <h4 class="testimonial-name">Елена Смирнова</h4>
+                            <div class="testimonial-stars">
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Впервые встретила такой внимательный подход. Объяснили все проблемы, показали на телефоне что и как будут делать. Теперь только к ним!"</p>
+                    <p class="testimonial-date">22 апреля 2023</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="http://static.photos/people/200x200/3" alt="Алексей Козлов" class="testimonial-avatar">
+                        <div>
+                            <h4 class="testimonial-name">Алексей Козлов</h4>
+                            <div class="testimonial-stars">
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                                <i data-feather="star" class="testimonial-star fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Отличный сервис, быстро устранили проблему с двигателем. Даже дали рекомендации по дальнейшему обслуживанию. Рекомендую!"</p>
+                    <p class="testimonial-date">10 марта 2023</p>
+                </div>
+            </div>
+
+            <div class="review-form-container">
+                <h2 class="review-form-title">Оставить отзыв</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating" class="form-label">Оценка</label>
+                        <div class="rating-stars">
+                            <i data-feather="star" class="rating-star cursor-pointer hover:fill-current" id="star1"></i>
+                            <i data-feather="star" class="rating-star cursor-pointer hover:fill-current" id="star2"></i>
+                            <i data-feather="star" class="rating-star cursor-pointer hover:fill-current" id="star3"></i>
+                            <i data-feather="star" class="rating-star cursor-pointer hover:fill-current" id="star4"></i>
+                            <i data-feather="star" class="rating-star cursor-pointer hover:fill-current" id="star5"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="review" class="form-label">Ваш отзыв</label>
+                        <textarea id="review" rows="4" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <a href="https://yandex.ru/maps" target="_blank" class="map-btn">
+                        <i data-feather="map-pin" class="map-icon"></i>
+                        Найти нас на карте
+                    </a>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">График работы</h3>
+                    <div class="footer-schedule">
+                        <p>Пн-Пт: 9:00 - 20:00</p>
+                        <p>Сб: 10:00 - 18:00</p>
+                        <p>Вс: выходной</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Контактный телефон</h3>
+                    <a href="tel:+78001234567" class="phone-link">
+                        <i data-feather="phone" class="phone-icon"></i>
+                        8 (800) 123-45-67
+                    </a>
+                    <p class="phone-note">Звонок бесплатный</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        // Star rating functionality
+        const stars = document.querySelectorAll('[id^="star"]');
+        stars.forEach(star => {
+            star.addEventListener('click', (e) => {
+                const starNum = parseInt(e.target.id.replace('star', ''));
+                stars.forEach((s, i) => {
+                    if (i < starNum) {
+                        s.classList.add('fill-current');
+                    } else {
+                        s.classList.remove('fill-current');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
